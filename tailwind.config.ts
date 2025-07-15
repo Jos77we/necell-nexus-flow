@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'Poppins', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +64,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Necell custom colors
+				'neon-blue': 'hsl(var(--neon-blue))',
+				'deep-space': 'hsl(var(--deep-space))',
+				'dark-card': 'hsl(var(--dark-card))',
+				'light-text': 'hsl(var(--light-text))',
+				'subtle-text': 'hsl(var(--subtle-text))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
