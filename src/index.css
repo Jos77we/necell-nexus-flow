@@ -8,32 +8,32 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 222 47% 11%;       /* #0F172A - Professional dark navy */
-    --foreground: 210 40% 98%;       /* #F8FAFC - Crisp white */
+    --background: 0 0% 100%;         /* #FFFFFF - Clean white */
+    --foreground: 222 47% 11%;       /* #0F172A - Dark text */
 
-    --card: 217 33% 17%;             /* #1E293B - Professional card */
-    --card-foreground: 210 40% 98%;   
+    --card: 210 40% 98%;             /* #F8FAFC - Light card */
+    --card-foreground: 222 47% 11%;   
 
-    --popover: 217 33% 17%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
     --primary: 217 91% 60%;          /* #3B82F6 - Professional blue */
-    --primary-foreground: 210 40% 98%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 262 83% 58%;        /* #A855F7 - Vibrant purple accent */
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 14% 96%;        /* #F1F5F9 - Light gray */
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 215 25% 27%;           
-    --muted-foreground: 215 16% 65%; /* #94A3B8 */
+    --muted: 220 14% 96%;           
+    --muted-foreground: 215 16% 47%; /* #64748B */
 
     --accent: 38 92% 50%;            /* #F59E0B - Energetic amber */
-    --accent-foreground: 222 47% 11%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 215 25% 27%;           /* Professional borders */
-    --input: 217 33% 17%;
+    --border: 214 32% 91%;           /* #E2E8F0 - Light borders */
+    --input: 214 32% 91%;
     --ring: 217 91% 60%;             /* Professional blue ring */
 
     --radius: 0.75rem;
@@ -42,22 +42,23 @@ All colors MUST be HSL.
     --corporate-blue: 217 91% 60%;   /* #3B82F6 - Primary brand */
     --vibrant-purple: 262 83% 58%;   /* #A855F7 - Secondary brand */
     --energetic-amber: 38 92% 50%;   /* #F59E0B - Accent/CTA */
-    --professional-navy: 222 47% 11%; /* #0F172A - Background */
-    --card-slate: 217 33% 17%;       /* #1E293B - Cards */
-    --light-text: 210 40% 98%;       /* #F8FAFC - Text */
-    --subtle-text: 215 16% 65%;      /* #94A3B8 - Muted text */
+    --professional-navy: 222 47% 11%; /* #0F172A - Dark text */
+    --card-slate: 210 40% 98%;       /* #F8FAFC - Light cards */
+    --light-bg: 220 14% 96%;         /* #F1F5F9 - Section background */
+    --dark-text: 222 47% 11%;        /* #0F172A - Primary text */
+    --subtle-text: 215 16% 47%;      /* #64748B - Muted text */
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--corporate-blue)), hsl(var(--vibrant-purple)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--professional-navy)), hsl(var(--card-slate)));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card-slate)), hsl(var(--card-slate) / 0.8));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--energetic-amber)), hsl(var(--vibrant-purple)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--corporate-blue) / 0.05), hsl(var(--vibrant-purple) / 0.05));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card-slate)), hsl(0 0% 100%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--energetic-amber)), hsl(var(--corporate-blue)));
     
     /* Glows and Shadows */
-    --shadow-primary: 0 0 30px hsl(var(--corporate-blue) / 0.3);
-    --shadow-card: 0 10px 25px -5px hsl(var(--professional-navy) / 0.5);
-    --glow-primary: 0 0 20px hsl(var(--corporate-blue) / 0.4);
-    --glow-accent: 0 0 20px hsl(var(--energetic-amber) / 0.4);
+    --shadow-primary: 0 4px 20px hsl(var(--corporate-blue) / 0.15);
+    --shadow-card: 0 2px 8px hsl(222 47% 11% / 0.08);
+    --glow-primary: 0 0 30px hsl(var(--corporate-blue) / 0.3);
+    --glow-accent: 0 0 30px hsl(var(--energetic-amber) / 0.3);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

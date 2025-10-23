@@ -71,7 +71,8 @@ export default {
 				'energetic-amber': 'hsl(var(--energetic-amber))',
 				'professional-navy': 'hsl(var(--professional-navy))',
 				'card-slate': 'hsl(var(--card-slate))',
-				'light-text': 'hsl(var(--light-text))',
+				'light-bg': 'hsl(var(--light-bg))',
+				'dark-text': 'hsl(var(--dark-text))',
 				'subtle-text': 'hsl(var(--subtle-text))',
 			},
 			borderRadius: {
