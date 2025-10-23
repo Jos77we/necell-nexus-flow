@@ -1,23 +1,31 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import heroImage from '@/assets/hero-ai-chatbot.jpg';
-import floatingShapes from '@/assets/floating-shapes.jpg';
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden necell-hero-bg">
-      {/* Background floating shapes */}
-      <div 
-        className="absolute inset-0 opacity-20 floating-animation"
-        style={{
-          backgroundImage: `url(${floatingShapes})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
+      {/* Animated floating particles */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Large circles */}
+        <div className="absolute top-20 left-10 w-32 h-32 bg-corporate-blue/10 rounded-full animate-float-slow" />
+        <div className="absolute top-40 right-20 w-40 h-40 bg-vibrant-purple/10 rounded-full animate-float-medium" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-32 left-1/4 w-24 h-24 bg-energetic-amber/10 rounded-full animate-float-fast" style={{ animationDelay: '0.5s' }} />
+        <div className="absolute bottom-20 right-1/3 w-36 h-36 bg-corporate-blue/10 rounded-full animate-float-slow" style={{ animationDelay: '2s' }} />
+        
+        {/* Medium circles */}
+        <div className="absolute top-1/3 left-1/3 w-20 h-20 bg-vibrant-purple/15 rounded-full animate-float-medium" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-energetic-amber/15 rounded-full animate-float-fast" style={{ animationDelay: '0.8s' }} />
+        <div className="absolute bottom-1/3 left-1/2 w-28 h-28 bg-corporate-blue/10 rounded-full animate-float-slow" style={{ animationDelay: '2.5s' }} />
+        
+        {/* Small particles */}
+        <div className="absolute top-1/4 right-1/2 w-12 h-12 bg-vibrant-purple/20 rounded-full animate-float-fast" />
+        <div className="absolute top-3/4 left-1/4 w-8 h-8 bg-energetic-amber/20 rounded-full animate-float-medium" style={{ animationDelay: '1.2s' }} />
+        <div className="absolute top-1/2 right-1/3 w-10 h-10 bg-corporate-blue/20 rounded-full animate-float-slow" style={{ animationDelay: '0.3s' }} />
+      </div>
       
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/60 to-background/80" />
       
       <div className="container mx-auto px-6 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
