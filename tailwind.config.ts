@@ -66,9 +66,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				// Necell custom colors
-				'neon-blue': 'hsl(var(--neon-blue))',
-				'deep-space': 'hsl(var(--deep-space))',
-				'dark-card': 'hsl(var(--dark-card))',
+				'corporate-blue': 'hsl(var(--corporate-blue))',
+				'vibrant-purple': 'hsl(var(--vibrant-purple))',
+				'energetic-amber': 'hsl(var(--energetic-amber))',
+				'professional-navy': 'hsl(var(--professional-navy))',
+				'card-slate': 'hsl(var(--card-slate))',
 				'light-text': 'hsl(var(--light-text))',
 				'subtle-text': 'hsl(var(--subtle-text))',
 			},
