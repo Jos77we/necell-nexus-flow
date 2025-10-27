@@ -33,7 +33,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="text-2xl font-bold text-gradient">
-              Necell
+              Onecell
             </div>
             <div className="text-sm text-subtle-text font-medium">
               Technologies
